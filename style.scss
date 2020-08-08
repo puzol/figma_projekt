@@ -1,0 +1,155 @@
+$light_green : #4CBF34;
+$light_blue : #73C4EE;
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.default_section{
+    width:100%;
+    max-width: 1196px;
+    display:block;
+    height:500px;
+    margin:50px auto 50px auto;
+}
+
+.hero{
+    width:100%;
+    background-color: #E9E4E4; // placeholder for image
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 59px;
+    
+    p{
+        font-family: Roboto;  //Roboto is not websafe, gotta download
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140.62%; /* or 25px */
+        text-align: center;
+    }
+}
+
+.gradient_title{
+    font-size: 50px;
+    color: rgba(0,0,0,0);
+    margin-bottom:19px;
+    font-family: Post No Bills Colombo; // https://www.cufonfonts.com/font/post-no-bills-colombo for font download
+    font-weight: bold;
+    line-height: 75px;
+    background: linear-gradient(90deg, $light_green 23.5%, $light_blue 73.62%);
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+    text-align: center;
+}
+
+.flex_section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .e_waste_recycle{
+        width:100%;
+        max-width:950px;
+        height:200px;
+    }
+
+    .icons{
+        width:85%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto 50px auto;
+    }
+
+    .text{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        p{
+            text-align: center;
+            font-size:18px;
+            line-height: 140.62%;
+            font-family:Robot;
+        }
+
+        span{
+            font-weight: bold;
+        }
+    }
+}
+
+
+footer{
+    width:100%;
+    min-height:260px;
+    background:linear-gradient(90deg, $light_green 23.5%, $light_blue 73.62%);
+
+    .container{
+        width:100%;
+        max-width: 1196px;
+        min-height:260px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin:auto;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-height:160px;
+
+        #raw_materials{
+            margin-bottom:20px;
+        }
+    }
+
+    h3{
+        color:white;
+        font-family: roboto;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+
+    .right{
+        max-height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        ul{
+            color:white;
+            padding:0;
+            font-size: 20px;
+            line-height: 23px;
+            opacity: 0.75;
+
+            li{
+                margin-bottom:20px;
+            }
+        }
+    }
+}
+
+
