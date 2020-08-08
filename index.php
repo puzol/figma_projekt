@@ -1,8 +1,8 @@
 <?php 
-    //include_once('footer.php');
+    //include_once('header.php');
     include_once('home_page_sec1.php');
     include_once('home_page_sec2.php');
-    //include_once('header.php');
+    include_once('footer.php');
 ?>
 
 <!DOCTYPE html>
@@ -33,29 +33,6 @@
     </head>
 
     <body>
-    
-    <footer>
-        <div class="container">
-            <div class="left">
-                <h3>
-                    SUPPORTED BY
-                </h3>
-                <img src="images/raw_materials_academy.png" alt="raw_materials_academy" title="raw_materials_academy" id="raw_materials">
-                <img src="images/eu_flag.png" alt="eu_flag" title="eu_flag">
-            </div>
-
-            <div class="right">
-                <div class="left">
-                    <h3>QUICK LINKS</h3>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Privacy Plicy</li>
-                        <li>Impressum</li>
-                    </ul>
-                </div>
-                <div class="right"></div>
-            </div>
-        </div>
-    </footer>    
+      
     </body>
 </html>
