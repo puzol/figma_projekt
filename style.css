@@ -81,7 +81,7 @@ ul {
 .flex_section .e_waste_recycle {
   width: 100%;
   max-width: 950px;
-  height: 200px;
+  min-height: 200px;
 }
 
 .flex_section .icons {
@@ -115,6 +115,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 10px;
 }
 
 .flex_section .text {
@@ -154,7 +155,7 @@ footer {
 footer .container {
   width: 100%;
   max-width: 1196px;
-  min-height: 260px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,8 +166,7 @@ footer .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto;
-  padding: 0;
+  padding-top: 50px;
 }
 
 footer .left {
@@ -180,10 +180,16 @@ footer .left {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   max-height: 160px;
+  margin-left: 25px;
 }
 
 footer .left #raw_materials {
   margin-bottom: 20px;
+  max-width: 270px;
+}
+
+footer .left #eu_flag {
+  max-width: 260px;
 }
 
 footer h3 {
@@ -211,13 +217,14 @@ footer .right_wrap {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 25px;
 }
 
-footer .right_wrap ul {
+footer ul {
   padding: 0;
 }
 
-footer .right_wrap li {
+footer li {
   color: white;
   margin-bottom: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -226,7 +233,7 @@ footer .right_wrap li {
   line-height: 23px;
 }
 
-footer .right_wrap .icon_row {
+footer .icon_row {
   max-width: 200px;
   width: 200px;
   display: -webkit-box;
@@ -248,12 +255,20 @@ footer .right_wrap .icon_row {
     min-height: 375px;
     height: 375px;
   }
+  #waste_section {
+    height: 470px;
+  }
   .gradient_title {
     font-size: 35px;
     line-height: 52px;
   }
   .hero p span {
     display: none;
+  }
+  .icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 60px;
   }
   .icons_text_phone {
     display: block;
@@ -270,17 +285,20 @@ footer .right_wrap .icon_row {
   .icons_arrow {
     display: none;
   }
+  .e_waste_recycle {
+    min-height: 450px;
+  }
   .e_waste_recycle .text {
     display: none;
   }
   footer .container {
-    padding: 25px;
     min-height: 220px;
   }
   footer .left {
     max-height: 220px;
     height: 300px;
     width: 100%;
+    max-width: 500px;
   }
   #footer_right_content {
     display: none;
@@ -289,8 +307,8 @@ footer .right_wrap .icon_row {
     max-width: 275px;
   }
   #eu_flag {
-    width: 100%;
-    max-width: 500px;
+    width: 500px;
+    max-width: 380px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -298,18 +316,32 @@ footer .right_wrap .icon_row {
 }
 
 @media only screen and (min-device-width: 768px) {
+  footer .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   .default_section {
     min-height: 450px;
     height: 450px;
   }
+  #waste_section {
+    height: 470px;
+  }
   .hero p span {
     display: block;
+  }
+  .icons {
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
   }
   .icons_text_phone {
     display: block;
   }
   .icons_arrow {
     display: none;
+  }
+  .e_waste_recycle {
+    min-height: 450px;
   }
   .e_waste_recycle .text {
     display: none;
@@ -331,8 +363,15 @@ footer .right_wrap .icon_row {
     min-height: 500px;
     height: 500px;
   }
+  #waste_section {
+    height: 500px;
+  }
   .hero p span {
     display: block;
+  }
+  .icons {
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
   }
   .icons_text_phone {
     display: none;

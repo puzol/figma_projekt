@@ -69,7 +69,7 @@ ul{
     .e_waste_recycle{
         width:100%;
         max-width:950px;
-        height:200px;
+        min-height:200px;
     }
 
     .icons{
@@ -86,6 +86,7 @@ ul{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin:10px;
     }
 
     .text{
@@ -112,18 +113,17 @@ ul{
 
 footer{
     width:100%;
-    min-height:260px;
+    min-height: 260px;
     background:linear-gradient(90deg, $light_green 23.5%, $light_blue 73.62%);
 
     .container{
         width:100%;
         max-width: 1196px;
-        min-height:260px;
+        margin:auto;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        margin:auto;
-        padding:0;
+        padding-top:50px;
     }
 
     .left{
@@ -131,9 +131,15 @@ footer{
         flex-direction: column;
         justify-content: space-around;
         max-height:160px;
+        margin-left: 25px;
 
         #raw_materials{
             margin-bottom:20px;
+            max-width:270px;
+        }
+
+        #eu_flag{
+            max-width: 260px;
         }
     }
 
@@ -155,30 +161,30 @@ footer{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-
-        ul{
-            padding:0;
-        }
-
-        li{
-            color:white;
-            margin-bottom:16px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            opacity:0.75;
-            font-size:20px;
-            line-height: 23px;
-        }
-
-        .icon_row{
-            max-width:200px;
-            width:200px;
-            display:flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top:20px;
-        }
+        margin-right: 25px;
     }
 
+    ul{
+        padding:0;
+    }
+
+    li{
+        color:white;
+        margin-bottom:16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        opacity:0.75;
+        font-size:20px;
+        line-height: 23px;
+    }
+
+    .icon_row{
+        max-width:200px;
+        width:200px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top:20px;
+    }
 }
 
 /* ----> Responsive ----*/
@@ -190,6 +196,10 @@ footer{
         height:375px;
     }
 
+    #waste_section{
+        height:470px;
+    }
+
     .gradient_title{
         font-size:35px;
         line-height: 52px;
@@ -197,6 +207,11 @@ footer{
     
     .hero p span{
         display:none;
+    }
+
+    .icons{
+        flex-wrap: wrap;
+        margin-bottom: 60px;
     }
 
     .icons_text_phone{
@@ -217,6 +232,11 @@ footer{
         display:none;
     }
 
+    .e_waste_recycle{
+        min-height:450px;
+    }
+
+
     .e_waste_recycle .text{
         display:none;
     }
@@ -226,7 +246,6 @@ footer{
     footer{
 
         .container{
-            padding:25px;
             min-height:220px;
         }
 
@@ -234,6 +253,7 @@ footer{
             max-height: 220px;
             height:300px;
             width:100%;
+            max-width: 500px;
         }
     }
 
@@ -246,21 +266,38 @@ footer{
     }
 
     #eu_flag{
-        width:100%;
-        max-width:500px;
+        width:500px;
+        max-width:380px;
         align-self: center;
     }
 }
 
 @media only screen and (min-device-width:768px){
 
+    footer{
+
+        .container{
+
+            box-sizing: border-box;
+        }
+
+    }
+    
     .default_section{
         min-height: 450px;
         height:450px;
     }
 
+    #waste_section{
+        height:470px;
+    }
+
     .hero p span{
         display:block;
+    }
+
+    .icons{
+        flex-wrap: initial;
     }
 
     .icons_text_phone{
@@ -269,6 +306,10 @@ footer{
 
     .icons_arrow{
         display:none;
+    }
+
+    .e_waste_recycle{
+        min-height:450px;
     }
 
     .e_waste_recycle .text{
@@ -294,8 +335,16 @@ footer{
         height:500px;
     }
 
+    #waste_section{
+        height:500px;
+    }
+
     .hero p span{
         display:block;
+    }
+
+    .icons{
+        flex-wrap: initial;
     }
 
     .icons_text_phone{

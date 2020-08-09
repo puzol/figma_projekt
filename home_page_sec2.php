@@ -1,6 +1,6 @@
 
 
-<section class="default_section flex_section">
+<section class="default_section flex_section" id="waste_section">
 
             <h2 class="gradient_title">The future is in your hands<br>and in your storeroom</h2>
 
