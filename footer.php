@@ -6,11 +6,11 @@
                 <h3>
                     SUPPORTED BY
                 </h3>
-                <img src="images/raw_materials_academy.png" alt="raw_materials_academy" title="raw_materials_academy" id="raw_materials">
-                <img src="images/eu_flag.png" alt="eu_flag" title="eu_flag">
+                <img src="images/raw_materials_academy.png" alt="raw_materials_academy" title="raw_materials_academy" id="raw_materials" id="raw_materials"> 
+                <img src="images/eu_flag2.png" alt="eu_flag" title="eu_flag" id="eu_flag">
             </div>
 
-            <div class="right_wrap">
+            <div class="right_wrap" id="footer_right_content">
                 <div class="left_row">
                     <h3>QUICK LINKS</h3>
                     <ul>
