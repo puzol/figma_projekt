@@ -122,7 +122,6 @@ footer{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         margin:auto;
         padding:0;
     }
@@ -225,6 +224,7 @@ footer{
     // FOOTER
     
     footer{
+
         .container{
             padding:25px;
             min-height:220px;
