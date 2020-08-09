@@ -116,6 +116,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
+  max-width: 160px;
 }
 
 .flex_section .text {
@@ -256,7 +257,7 @@ footer .icon_row {
     height: 375px;
   }
   #waste_section {
-    height: 470px;
+    height: 500px;
   }
   .gradient_title {
     font-size: 35px;
@@ -268,13 +269,12 @@ footer .icon_row {
   .icons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 60px;
   }
   .icons_text_phone {
     display: block;
     margin-top: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 140.62%;
     font-family: Robot;
     max-height: 75px;
@@ -336,6 +336,7 @@ footer .icon_row {
   }
   .icons_text_phone {
     display: block;
+    font-size: 18px;
   }
   .icons_arrow {
     display: none;

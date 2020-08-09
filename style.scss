@@ -87,6 +87,7 @@ ul{
         justify-content: space-between;
         align-items: center;
         margin:10px;
+        max-width: 160px;
     }
 
     .text{
@@ -197,7 +198,7 @@ footer{
     }
 
     #waste_section{
-        height:470px;
+        height:500px;
     }
 
     .gradient_title{
@@ -211,14 +212,13 @@ footer{
 
     .icons{
         flex-wrap: wrap;
-        margin-bottom: 60px;
     }
 
     .icons_text_phone{
         display:block;
         margin-top:20px;
         text-align: center;
-        font-size:18px;
+        font-size:14px;
         line-height: 140.62%;
         font-family:Robot;
         max-height: 75px;
@@ -302,6 +302,7 @@ footer{
 
     .icons_text_phone{
         display:block;
+        font-size: 18px;
     }
 
     .icons_arrow{
