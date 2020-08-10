@@ -1,8 +1,8 @@
 <?php 
     //include_once('header.php');
-    include_once('home_page_sec1.php');
+    include_once('home/home_page_sec1.php');
     //include_once('home_page_sec1_mdb.php');
-    include_once('home_page_sec2.php');
+    include_once('home/home_page_sec2.php');
     //include_once('footer.php');
     include_once('footer_mdb.php');
 ?>
