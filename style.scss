@@ -16,8 +16,14 @@ ul{
     max-width: 1196px;
     display:block;
     height:500px;
-    max-height:500px;
     margin:50px auto 50px auto;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+.max_500{
+    max-height:500px;
 }
 
     // HOME PAGE SECTION 1
@@ -117,14 +123,15 @@ footer{
     min-height: 260px;
     background:linear-gradient(90deg, $light_green 23.5%, $light_blue 73.62%);
 
-    .container{
+    .footer_container{
         width:100%;
         max-width: 1196px;
         margin:auto;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top:50px;
+        align-items: flex-start;
+        padding-top:25px;
     }
 
     .left{
@@ -133,6 +140,7 @@ footer{
         justify-content: space-around;
         max-height:160px;
         margin-left: 25px;
+        margin-top:-10px;
 
         #raw_materials{
             margin-bottom:20px;
@@ -186,6 +194,50 @@ footer{
         justify-content: space-between;
         margin-top:20px;
     }
+
+    // MDBootstrap
+
+    .container{
+        max-width: 1196px;
+        width:100%;
+        min-height: 20px;
+        margin:auto;
+        padding:25px 25px 0 25px;
+
+        .row{
+            width:100%;
+            min-height: 10px;
+            margin:0;
+            padding:0;
+
+            .left_col{
+                min-height: 5px;
+                padding:0;
+            }
+
+            .eu_flag{
+                padding:0;
+            }
+
+            #eu_flag_mdb{
+                max-width: 370px;
+                width:100%;
+            }
+
+            #raw_materials{
+                margin-bottom:40px;
+            }
+
+            .spacer{
+                min-height: 10px;
+            }
+
+            .right_col{
+                min-height: 30px;
+                padding:0;
+            }
+        }
+    }
 }
 
 /* ----> Responsive ----*/
@@ -195,10 +247,12 @@ footer{
     .default_section{
         min-height: 375px;
         height:375px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #waste_section{
-        height:500px;
+        height:unset;
     }
 
     .gradient_title{
@@ -245,7 +299,7 @@ footer{
     
     footer{
 
-        .container{
+        .footer_container{
             min-height:220px;
         }
 
@@ -253,7 +307,6 @@ footer{
             max-height: 220px;
             height:300px;
             width:100%;
-            max-width: 500px;
         }
     }
 
@@ -265,10 +318,28 @@ footer{
         max-width: 275px;
     }
 
+    .eu_flag{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #eu_flag{
         width:500px;
         max-width:380px;
         align-self: center;
+    }
+
+    #footer_spacer{
+        display:none;
+    }
+
+    #footer_right_col{
+        display:none;
+    }
+
+    #eu_flag_mdb{
+        margin:auto;
     }
 }
 
@@ -276,7 +347,7 @@ footer{
 
     footer{
 
-        .container{
+        .footer_container{
 
             box-sizing: border-box;
         }
@@ -286,10 +357,12 @@ footer{
     .default_section{
         min-height: 450px;
         height:450px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #waste_section{
-        height:470px;
+        height:unset;
     }
 
     .hero p span{
@@ -318,14 +391,37 @@ footer{
     }
 
     // FOOTER
+
+    footer{
+        .left{
+            width:100%;
+            max-width: 780px;
+        }
+    }
     
     #footer_right_content{
         display:flex;
     }
 
+    .eu_flag{
+        display:block;
+    }
+
     #eu_flag{
         max-width:257px;
         align-self: flex-start;
+    }
+
+    #footer_spacer{
+        display:block;
+    }
+
+    #footer_right_col{
+        display:block;
+    }
+
+    #eu_flag_mdb{
+        margin:0;
     }
 }
 
@@ -337,7 +433,7 @@ footer{
     }
 
     #waste_section{
-        height:500px;
+        height:unset;
     }
 
     .hero p span{
@@ -363,12 +459,33 @@ footer{
 
     // FOOTER
 
+    .left{
+        width:100%;
+        max-width: 500px;
+    }
+
     #footer_right_content{
         display:flex;
     }
 
+    .eu_flag{
+        display:block;
+    }
+
     #eu_flag{
         max-width:257px;
+    }
+
+    #footer_spacer{
+        display:block;
+    }
+
+    #footer_right_col{
+        display:block;
+    }
+
+    #eu_flag_mdb{
+        margin:0;
     }
 }
 

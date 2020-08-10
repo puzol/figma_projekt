@@ -1,7 +1,7 @@
 
 
 <footer>
-        <div class="container">
+        <div class="footer_container">
             <div class="left">
                 <h3>
                     SUPPORTED BY

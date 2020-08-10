@@ -13,8 +13,15 @@ ul {
   max-width: 1196px;
   display: block;
   height: 500px;
-  max-height: 500px;
   margin: 50px auto 50px auto;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.max_500 {
+  max-height: 500px;
 }
 
 .hero {
@@ -153,7 +160,7 @@ footer {
   background: linear-gradient(90deg, #4CBF34 23.5%, #73C4EE 73.62%);
 }
 
-footer .container {
+footer .footer_container {
   width: 100%;
   max-width: 1196px;
   margin: auto;
@@ -167,7 +174,10 @@ footer .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 50px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 25px;
 }
 
 footer .left {
@@ -182,6 +192,7 @@ footer .left {
       justify-content: space-around;
   max-height: 160px;
   margin-left: 25px;
+  margin-top: -10px;
 }
 
 footer .left #raw_materials {
@@ -250,14 +261,58 @@ footer .icon_row {
   margin-top: 20px;
 }
 
+footer .container {
+  max-width: 1196px;
+  width: 100%;
+  min-height: 20px;
+  margin: auto;
+  padding: 25px 25px 0 25px;
+}
+
+footer .container .row {
+  width: 100%;
+  min-height: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+footer .container .row .left_col {
+  min-height: 5px;
+  padding: 0;
+}
+
+footer .container .row .eu_flag {
+  padding: 0;
+}
+
+footer .container .row #eu_flag_mdb {
+  max-width: 370px;
+  width: 100%;
+}
+
+footer .container .row #raw_materials {
+  margin-bottom: 40px;
+}
+
+footer .container .row .spacer {
+  min-height: 10px;
+}
+
+footer .container .row .right_col {
+  min-height: 30px;
+  padding: 0;
+}
+
 /* ----> Responsive ----*/
 @media only screen and (min-device-width: 360px) {
   .default_section {
     min-height: 375px;
     height: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #waste_section {
-    height: 500px;
+    height: unset;
   }
   .gradient_title {
     font-size: 35px;
@@ -291,20 +346,30 @@ footer .icon_row {
   .e_waste_recycle .text {
     display: none;
   }
-  footer .container {
+  footer .footer_container {
     min-height: 220px;
   }
   footer .left {
     max-height: 220px;
     height: 300px;
     width: 100%;
-    max-width: 500px;
   }
   #footer_right_content {
     display: none;
   }
   #raw_materials {
     max-width: 275px;
+  }
+  .eu_flag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #eu_flag {
     width: 500px;
@@ -313,19 +378,30 @@ footer .icon_row {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  #footer_spacer {
+    display: none;
+  }
+  #footer_right_col {
+    display: none;
+  }
+  #eu_flag_mdb {
+    margin: auto;
+  }
 }
 
 @media only screen and (min-device-width: 768px) {
-  footer .container {
+  footer .footer_container {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
   .default_section {
     min-height: 450px;
     height: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #waste_section {
-    height: 470px;
+    height: unset;
   }
   .hero p span {
     display: block;
@@ -347,15 +423,31 @@ footer .icon_row {
   .e_waste_recycle .text {
     display: none;
   }
+  footer .left {
+    width: 100%;
+    max-width: 780px;
+  }
   #footer_right_content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  .eu_flag {
+    display: block;
+  }
   #eu_flag {
     max-width: 257px;
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  #footer_spacer {
+    display: block;
+  }
+  #footer_right_col {
+    display: block;
+  }
+  #eu_flag_mdb {
+    margin: 0;
   }
 }
 
@@ -365,7 +457,7 @@ footer .icon_row {
     height: 500px;
   }
   #waste_section {
-    height: 500px;
+    height: unset;
   }
   .hero p span {
     display: block;
@@ -385,13 +477,29 @@ footer .icon_row {
     display: -ms-flexbox;
     display: flex;
   }
+  .left {
+    width: 100%;
+    max-width: 500px;
+  }
   #footer_right_content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  .eu_flag {
+    display: block;
+  }
   #eu_flag {
     max-width: 257px;
+  }
+  #footer_spacer {
+    display: block;
+  }
+  #footer_right_col {
+    display: block;
+  }
+  #eu_flag_mdb {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

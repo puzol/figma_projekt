@@ -1,6 +1,6 @@
 
 
-<section class="default_section">
+<section class="default_section max_500">
     <div class="hero">
         <h1 class="gradient_title">#WEEE4Future</h1>
         <p>
